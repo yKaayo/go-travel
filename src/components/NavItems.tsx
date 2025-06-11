@@ -7,7 +7,7 @@ interface NavItemProps {
   link: string;
 }
 
-export default function NavItem({ text, link }: NavItemProps): JSX.Element {
+export default function NavItem({ text, link }: NavItemProps) {
   const lineLinkRef = useRef(null);
   const [isHovered, setIsHovered] = useState(false);
 
@@ -15,7 +15,7 @@ export default function NavItem({ text, link }: NavItemProps): JSX.Element {
     gsap.to(lineLinkRef.current, {
       scaleX: isHovered ? 1 : 0,
       transformOrigin: isHovered ? "left" : "right",
-      duration: 0.3,
+      duration: 0.4,
       ease: "power2.out",
     });
   }, [isHovered]);

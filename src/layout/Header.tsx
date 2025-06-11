@@ -10,7 +10,7 @@ import NavItems from "../components/NavItems.js";
 
 gsap.registerPlugin(useGSAP);
 
-export default function Header(): JSX.Element {
+export default function Header() {
   const iconAnimRef = useRef(null);
   const textAnimRef = useRef(null);
 
